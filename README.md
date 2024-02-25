@@ -1,6 +1,7 @@
 # Mon Site Web Personnel
 
 Bienvenue sur mon site web personnel ! Ce projet contient les fichiers nécessaires pour créer et publier mon propre site web personnel. Pour l'instant, le projet consiste en un fichier HTML de mon CV.
+
 Contenu du Projet
 
     cv.html: Le fichier HTML de mon CV.

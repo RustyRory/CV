@@ -1,0 +1,113 @@
+// Définir vos couleurs
+$white: #ffffff;
+$black: #000000;
+$green: #22c55e; // Vert principal
+// Définir les nuances de vert (100 à 900)
+$green-100: #d1fae5; // Vert clair
+$green-200: #a7f3d0;
+$green-300: #6ee7b7;
+$green-400: #34d399;
+$green-500: #10b981; // Vert principal
+$green-600: #059669;
+$green-700: #047857;
+$green-800: #065f46; // Vert foncé
+$green-900: #064e3b; // Vert encore plus foncé
+
+// Ajouter les variables CSS globales pour Bootstrap
+:root {
+  --bs-white: #{$white};
+  --bs-black: #{$black};
+  --bs-green: #{$green};
+  --bs-green-100: #{$green-100};
+  --bs-green-200: #{$green-200};
+  --bs-green-300: #{$green-300};
+  --bs-green-400: #{$green-400};
+  --bs-green-500: #{$green-500};
+  --bs-green-600: #{$green-600};
+  --bs-green-700: #{$green-700};
+  --bs-green-800: #{$green-800};
+  --bs-green-900: #{$green-900};
+}
+
+// Thème personnalisé "green-900"
+[data-bs-theme="green-900"] {
+  --bs-body-color: var(--bs-white); // Couleur principale du texte
+  --bs-body-color-rgb: #{to-rgb($white)}; // Couleur RGB pour effets divers
+  --bs-body-bg: var(--bs-green-900); // Utiliser la nouvelle teinte pour le fond
+  --bs-body-bg-rgb: #{to-rgb($green-900)}; // Fond en RGB pour transparence
+  --bs-tertiary-bg: var(--bs-green-500); // Couleur pour arrière-plan tertiaire
+  --bs-primary: var(
+    --bs-green-700
+  ); // Couleur principale (boutons, liens, etc.)
+  --bs-secondary: var(--bs-white); // Couleur secondaire
+  --bs-border-color: var(--bs-green-500); // Couleur des bordures
+  --bs-link-color: var(--bs-green-200); // Couleur des liens
+  --bs-link-hover-color: lighten(
+    $green-200,
+    15%
+  ); // Liens au survol (éclaircis)
+}
+
+// Thème personnalisé "green-700"
+[data-bs-theme="green-700"] {
+  --bs-body-color: var(--bs-white); // Couleur principale du texte
+  --bs-body-color-rgb: #{to-rgb($white)}; // Couleur RGB pour effets divers
+  --bs-body-bg: var(--bs-green-700); // Utiliser la nouvelle teinte pour le fond
+  --bs-body-bg-rgb: #{to-rgb($green-700)}; // Fond en RGB pour transparence
+  --bs-tertiary-bg: var(--bs-green-600); // Couleur pour arrière-plan tertiaire
+  --bs-primary: var(
+    --bs-green-600
+  ); // Couleur principale (boutons, liens, etc.)
+  --bs-secondary: var(--bs-white); // Couleur secondaire
+  --bs-border-color: var(--bs-green-600); // Couleur des bordures
+  --bs-link-color: var(--bs-green-200); // Couleur des liens
+  --bs-link-hover-color: lighten(
+    $green-700,
+    15%
+  ); // Liens au survol (éclaircis)
+}
+
+// Thème personnalisé "green-200"
+[data-bs-theme="green-100"] {
+  --bs-body-color: var(--bs-black); // Couleur principale du texte
+  --bs-body-color-rgb: #{to-rgb($black)}; // Couleur RGB pour effets divers
+  --bs-body-bg: var(--bs-green-100); // Utiliser la nouvelle teinte pour le fond
+  --bs-body-bg-rgb: #{to-rgb($green-100)}; // Fond en RGB pour transparence
+  --bs-tertiary-bg: var(--bs-green-500); // Couleur pour arrière-plan tertiaire
+  --bs-primary: var(
+    --bs-green-500
+  ); // Couleur principale (boutons, liens, etc.)
+  --bs-secondary: var(--bs-black); // Couleur secondaire
+  --bs-border-color: var(--bs-green-100); // Couleur des bordures
+  --bs-link-color: var(--bs-green-500); // Couleur des liens
+  --bs-link-hover-color: lighten(
+    $green-100,
+    15%
+  ); // Liens au survol (éclaircis)
+}
+
+// Exemple de style pour tester votre thème
+body[data-bs-theme="green-900"] {
+  font-family: "Arial", sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+body[data-bs-theme="green-700"] {
+  font-family: "Arial", sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+body[data-bs-theme="green-100"] {
+  font-family: "Arial", sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+a {
+  color: var(--bs-link-color);
+  &:hover {
+    color: var(--bs-link-hover-color);
+  }
+}

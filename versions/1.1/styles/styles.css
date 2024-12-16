@@ -1,0 +1,29 @@
+.container {
+  width: 1200px;
+
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  font-size: 0.6rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+h6 {
+  font-size: 0.8rem;
+}
+
+ul {
+  margin: 0;
+}

@@ -1,0 +1,95 @@
+:root {
+  --bs-white: #ffffff;
+  --bs-black: #000000;
+  --bs-green: #22c55e;
+  --bs-green-100: #d1fae5;
+  --bs-green-200: #a7f3d0;
+  --bs-green-300: #6ee7b7;
+  --bs-green-400: #34d399;
+  --bs-green-500: #10b981;
+  --bs-green-600: #059669;
+  --bs-green-700: #047857;
+  --bs-green-800: #065f46;
+  --bs-green-900: #064e3b;
+}
+
+[data-bs-theme=green-900] {
+  --bs-body-color: var(--bs-white);
+  --bs-body-color-rgb: to-rgb(#ffffff);
+  --bs-body-bg: var(--bs-green-900);
+  --bs-body-bg-rgb: to-rgb(#064e3b);
+  --bs-tertiary-bg: var(--bs-green-500);
+  --bs-primary: var(
+    --bs-green-700
+  );
+  --bs-secondary: var(--bs-white);
+  --bs-border-color: var(--bs-green-500);
+  --bs-link-color: var(--bs-green-200);
+  --bs-link-hover-color: lighten(
+    $green-200,
+    15%
+  );
+}
+
+[data-bs-theme=green-700] {
+  --bs-body-color: var(--bs-white);
+  --bs-body-color-rgb: to-rgb(#ffffff);
+  --bs-body-bg: var(--bs-green-700);
+  --bs-body-bg-rgb: to-rgb(#047857);
+  --bs-tertiary-bg: var(--bs-green-600);
+  --bs-primary: var(
+    --bs-green-600
+  );
+  --bs-secondary: var(--bs-white);
+  --bs-border-color: var(--bs-green-600);
+  --bs-link-color: var(--bs-green-200);
+  --bs-link-hover-color: lighten(
+    $green-700,
+    15%
+  );
+}
+
+[data-bs-theme=green-100] {
+  --bs-body-color: var(--bs-black);
+  --bs-body-color-rgb: to-rgb(#000000);
+  --bs-body-bg: var(--bs-green-100);
+  --bs-body-bg-rgb: to-rgb(#d1fae5);
+  --bs-tertiary-bg: var(--bs-green-500);
+  --bs-primary: var(
+    --bs-green-500
+  );
+  --bs-secondary: var(--bs-black);
+  --bs-border-color: var(--bs-green-100);
+  --bs-link-color: var(--bs-green-500);
+  --bs-link-hover-color: lighten(
+    $green-100,
+    15%
+  );
+}
+
+body[data-bs-theme=green-900] {
+  font-family: "Arial", sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+body[data-bs-theme=green-700] {
+  font-family: "Arial", sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+body[data-bs-theme=green-100] {
+  font-family: "Arial", sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+a {
+  color: var(--bs-link-color);
+}
+a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+/*# sourceMappingURL=custom-theme.css.map */
